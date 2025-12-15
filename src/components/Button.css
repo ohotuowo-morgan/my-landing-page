@@ -1,0 +1,49 @@
+/* Base styles shared by all buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect for all buttons */
+.btn:active {
+  transform: scale(0.98); /* Slight press effect */
+}
+
+/* --- VARIANTS --- */
+
+/* 1. Primary: Solid Blue (Main actions) */
+.primary {
+  background-color: #303030;
+  color: white;
+}
+.primary:hover {
+  background-color: #303030;
+}
+
+/* 2. Secondary: Light Gray (Cancel / neutral actions) */
+.secondary {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+.secondary:hover {
+  background-color: #e5e7eb;
+}
+
+/* 3. Outline: Border only (Less important actions) */
+.outline {
+  background-color: transparent;
+  border: 2px solid #e5e7eb;
+  color: #374151;
+}
+.outline:hover {
+  border-color: #d1d5db;
+  background-color: #f9fafb;
+}

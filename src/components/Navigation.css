@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: "100%";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #98A2B3;
+}
+
+nav a:hover{
+    color: #101928;
+}
+
+p {
+    font-size: 16px;
+    color: #101928;
+}
+
+header  img{
+    width: 20px;
+    height: auto;
+}
+
+.tools{
+    display: flex;
+    gap: 1rem;
+}
+

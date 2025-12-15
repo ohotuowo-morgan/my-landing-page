@@ -1,0 +1,153 @@
+/* The Card Container */
+.product-card {
+  background: #ffffff;
+  border-radius: 20px; /* Very rounded corners */
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  border: 1px solid transparent;
+}
+
+/* Hover Effect: Lifts up slightly */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  border-color: #f3f4f6;
+}
+
+/* Image Area */
+.product-image-container {
+  width: 100%;
+  height: 180px; /* Fixed height so cards align perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures bottle fits without cropping */
+}
+
+/* Title */
+.product-title {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Bottom Row (Price + Button) */
+.product-bottom {
+  display: flex;
+  justify-content: space-between; /* Pushes Price left, Button right */
+  align-items: center;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* The "+" Button */
+.add-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Circle shape */
+  border: none;
+  background-color: #f3f4f6;
+  color: #111;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #e5e7eb;
+}/* The Card Container */
+.product-card {
+  background: #ffffff;
+  border-radius: 20px; /* Very rounded corners */
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  border: 1px solid transparent;
+}
+
+/* Hover Effect: Lifts up slightly */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  border-color: #f3f4f6;
+}
+
+/* Image Area */
+.product-image-container {
+  width: 100%;
+  height: 180px; /* Fixed height so cards align perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures bottle fits without cropping */
+}
+
+/* Title */
+.product-title {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Bottom Row (Price + Button) */
+.product-bottom {
+  display: flex;
+  justify-content: space-between; /* Pushes Price left, Button right */
+  align-items: center;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* The "+" Button */
+.add-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Circle shape */
+  border: none;
+  background-color: #f3f4f6;
+  color: #111;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #e5e7eb;
+}

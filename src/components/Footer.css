@@ -1,0 +1,103 @@
+/* Footer Container */
+.footer {
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 4rem 2rem 2rem;
+  color: #333;
+  overflow: hidden; /* Crops the large background text */
+  font-family: sans-serif;
+  /* margin-top: auto; Pushes footer to bottom if page is short */
+}
+
+/* Content Wrapper (sits above the background text) */
+.footer-content {
+  position: relative;
+  z-index: 1; /* Ensures content is clickable */
+  max-width: 1200px;
+  /* margin: 0 auto; */
+}
+
+/* --- Top Row --- */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials img {
+  width: 26px;
+  height: 26px;
+}
+
+/* --- Middle Row --- */
+.footer-tagline {
+  margin-bottom: 4rem;
+  color:#535862;
+  line-height: 1.5;
+}
+
+.footer-tagline p {
+  margin: 0;
+  color:#535862;
+}
+
+/* --- Bottom Row --- */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+  color: #535862;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #535862;
+  font-weight: 600;
+}
+
+/* --- Large Background Text --- */
+.footer-bg-text {
+  position: absolute;
+  bottom: -0.18em; /* Positions it at the bottom edge */
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally */
+  font-size: 28vw; /* Massive size based on viewport width */
+  font-weight: 700;
+  color: #e3e5e8; /* Light gray color */
+  z-index: 0; /* Places it behind the content */
+  pointer-events: none; /* Makes it unclickable */
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Simple Responsive Tweak for Mobile */
+@media (max-width: 768px) {
+  .footer-top,
+  .footer-bottom,
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
