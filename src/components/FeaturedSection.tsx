@@ -16,14 +16,12 @@ const products = [
 function FeaturedSection() {
   return (
     <section id="featured" className="featured-section">
-      {/* Header with "Tabs" */}
       <div className="featured-header">
         <span className="tab active">Featured</span>
         <span className="tab">Collection</span>
         <span className="tab">Clearance</span>
       </div>
 
-      {/* Grid of Cards */}
       <div className="products-grid">
         {products.map((product) => (
           <Productcard 

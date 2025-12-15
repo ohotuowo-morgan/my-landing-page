@@ -4,13 +4,13 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className="footer">
-            {/* The large background text */}
+            
             <div className="footer-bg-text">Effiglow</div>
 
-            {/* The main content sits on top */}
+            
             <div className="footer-content">
 
-                {/* Top Section: Logo & Social Icons */}
+                
                 <div className="footer-top">
                     <div className="footer-logo">
                         <img src="/images/Star 1.svg" alt="Effiglow Logo" />
@@ -23,13 +23,13 @@ function Footer() {
                     </div>
                 </div>
 
-                {/* Middle Section: Taglines */}
+                
                 <div className="footer-tagline">
                     <p>Glow effortlessly</p>
                     <p>Discover skincare that works</p>
                 </div>
 
-                {/* Bottom Section: Links & Copyright */}
+                
                 <div className="footer-bottom">
                     <nav className="footer-links">
                         <a href="#">Home</a>

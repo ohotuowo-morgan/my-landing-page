@@ -12,14 +12,11 @@
   justify-content: center;
 }
 
-/* Hover effect for all buttons */
 .btn:active {
-  transform: scale(0.98); /* Slight press effect */
+  transform: scale(0.98); 
 }
 
-/* --- VARIANTS --- */
 
-/* 1. Primary: Solid Blue (Main actions) */
 .primary {
   background-color: #303030;
   color: white;
@@ -28,7 +25,6 @@
   background-color: #303030;
 }
 
-/* 2. Secondary: Light Gray (Cancel / neutral actions) */
 .secondary {
   background-color: #f3f4f6;
   color: #1f2937;
@@ -37,7 +33,6 @@
   background-color: #e5e7eb;
 }
 
-/* 3. Outline: Border only (Less important actions) */
 .outline {
   background-color: transparent;
   border: 2px solid #e5e7eb;
