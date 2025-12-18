@@ -1,6 +1,5 @@
 import './Footer.css';
 
-
 function Footer() {
     return (
         <footer className="footer">
@@ -17,8 +16,8 @@ function Footer() {
                         <span>Effiglow</span>
                     </div>
                     <div className="footer-socials">
-                        <a href="https://x.com/Glacier_Morgan"><img src="/images/twitter.png" alt="X" /></a>
-                        <a href="https://www.linkedin.com/in/ohotuowo-morgan-851b8530b/"><img src="/images/linkedin.png" alt="LinkedIn" /></a>
+                        <a href="https://x.com/Glacier_Morgan"><img src="/images/X.png" alt="X" /></a>
+                        <a href="https://www.linkedin.com/in/ohotuowo-morgan-851b8530b/"><img src="/images/link.png" alt="LinkedIn" /></a>
                         <a href="https://www.linkedin.com/in/ohotuowo-morgan-851b8530b/"><img src="/images/facebook.png" alt="Facebook" /></a>
                     </div>
                 </div>

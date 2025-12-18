@@ -51,6 +51,18 @@ header img {
     align-items: center;
 }
 
+.tools img {
+    width: 15px;
+    height: auto;
+
+}
+
+.tools a{
+    background-color: #E8E7E7;
+    padding: 1rem;    
+    border-radius:90px;
+}
+
 
 .hamburger {
     display: none;

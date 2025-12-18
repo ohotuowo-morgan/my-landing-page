@@ -1,3 +1,8 @@
+.featured-container{
+  background-color: #fff; 
+  padding: 2rem 2rem;
+}
+
 .featured-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -8,7 +13,7 @@
 .featured-header {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; 
   margin-bottom: 3rem;
   font-size: 1.1rem;
   color: #888;
@@ -19,7 +24,12 @@
   transition: color 0.2s;
 }
 
-.tab:hover, .tab.active {
+/* .tab:hover, .tab.active {
+  color: #111;
+  font-weight: 600;
+} */
+
+.tab:hover{
   color: #111;
   font-weight: 600;
 }
