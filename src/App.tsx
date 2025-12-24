@@ -1,22 +1,31 @@
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import FeaturedSection from "./components/FeaturedSection";
-
+import { Routes, Route } from 'react-router-dom'; // 1. Import Router tools
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Home from './Home';
+import Product from './Product';
 
 function App() {
- return (
-  <div>
-    <Navigation/>
+  return (
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      
+      <Navigation />
 
-    <main style={{ flex: 1 }}>
-      <Hero/>
-      <FeaturedSection />
-    </main>
+      <main style={{ flex: 1 }}>
+        {/* The Routes decide what to show in the middle */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/Support" element={<div style={{padding:'50px'}}>Support Page Coming Soon</div>} />
+          <Route path='/Explore' element={<div style={{padding: '50px'}}>Explore Page Coming Soon</div>} />
+          <Route path='/About_us' element={<div style={{padding: '50px'}}>About us Page Coming Soon</div>}/>
+        </Routes>
+        
+      </main>
 
-    <Footer/>
-  </div>
- )
+      <Footer />
+      
+    </div>
+  );
 }
 
 export default App;

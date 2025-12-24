@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -31,11 +32,11 @@ function Footer() {
                 
                 <div className="footer-bottom">
                     <nav className="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Product</a>
-                        <a href="#">Support</a>
-                        <a href="#">Explore</a>
-                        <a href="#">About Us</a>
+                        <Link to="/" >Home</Link>
+                        <Link to="/Product" >Product</Link>
+                        <Link to="/Support" >Support</Link>
+                        <Link to="/Explore" >Explore</Link>
+                        <Link to="/About_us" >About Us</Link>
                     </nav>
                     <div className="footer-copyright">
                         © 2065 Effiglow. All rights reserved.

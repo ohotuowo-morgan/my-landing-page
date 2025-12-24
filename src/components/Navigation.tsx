@@ -1,4 +1,5 @@
 import { useState } from 'react'; 
+import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
@@ -18,16 +19,16 @@ function Navigation() {
             </div>
 
             <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>Home</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>Products</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>Support</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>Explore</a>
-                <a href="#" onClick={() => setIsMenuOpen(false)}>About us</a>
+                <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+                <Link to="/Product" onClick={() => setIsMenuOpen(false)}>Products</Link>
+                <Link to="/Support" onClick={() => setIsMenuOpen(false)}>Support</Link>
+                <Link to="/Explore" onClick={() => setIsMenuOpen(false)}>Explore</Link>
+                <Link to="/About_us" onClick={() => setIsMenuOpen(false)}>About us</Link>
 
 
-                <a href="#" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Search</a>
-                <a href="#" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Cart</a>
-                <a href="#" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Profile</a>
+                <Link to="/" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Search</Link>
+                <Link to="/" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Cart</Link>
+                <Link to="/" className="mobile-only" onClick={() => setIsMenuOpen(false)}>Profile</Link>
             </nav>
 
             <div className="tools ">

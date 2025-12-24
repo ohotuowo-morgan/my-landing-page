@@ -1,0 +1,49 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #F0F2F5;
+    background-color: #fff;
+    color: #666;
+    font-size: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+/* Active page style (Dark Circle) */
+.page-btn .active {
+    background-color: #1F2937;
+    color: white;
+    font-weight: bold;
+}
+
+/* Disabled arrow buttons */
+.page-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.arrow{
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+}

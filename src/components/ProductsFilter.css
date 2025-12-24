@@ -1,0 +1,106 @@
+.filter-sidebar {
+  background-color: #F9FAFB;
+  width: 100%;
+  height: 85%;
+  max-width: 250px; 
+  padding: 1.5rem;
+  border-radius: 12px; 
+  /* border: 1px solid #f0f0f0; */
+  /* flex: 1; */
+  /* margin-left:  2rem; */
+}
+
+.filter-section {
+  margin-bottom: 2.5rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* --- Category List Styling --- */
+.category-list {
+  list-style: none; /* Removes bullet points */
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+.category-item {
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #666;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.category-item:hover {
+  color: #000;
+  background-color: #f9f9f9;
+}
+
+/* The Active State (Gray Background) */
+.category-item.active {
+  background-color: #F3F4F6; /* Light gray match */
+  color: #111;
+  font-weight: 500;
+}
+
+/* --- Price Slider Styling (Visual Simulation) --- */
+.price-slider-container {
+  padding: 0 5px;
+}
+
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #eee; /* The light gray unfilled part */
+  border-radius: 4px;
+  margin: 20px 0 10px 0;
+}
+
+.slider-fill {
+  position: absolute;
+  left: 0;
+  width: 50%; /* How much is filled */
+  height: 100%;
+  background-color: #111; /* The dark active part */
+  border-radius: 4px;
+}
+
+/* The Circles (Thumbs) */
+.slider-thumb {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transform: translateY(-50%); /* Centers it vertically */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.slider-thumb.left {
+  left: 0; /* Position of first circle */
+  border-color: #111; /* Active color */
+}
+
+.slider-thumb.right {
+  left: 50%; /* Position of second circle */
+  border-color: #111;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #333;
+}
