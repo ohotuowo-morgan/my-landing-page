@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Efiglow - Skincare Brand Landing Page 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive frontend landing page for a fictional skincare brand, **Efiglow**. This project demonstrates the implementation of a clean user interface, component-based architecture, and responsive design principles.
 
-Currently, two official plugins are available:
+##  Live Demo
+View Live Site: [https://my-landing-page-one-ecru.vercel.app]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
+* **Framework:** React.js 
+* **Styling:** CSS3 / Bootstrap CSS 
+* **Version Control:** Git & GitHub
 
-## React Compiler
+##  Key Features
+* **Responsive Design:** Fully optimized layout that adapts seamlessly to mobile, tablet, and desktop screens.
+* **Component Architecture:** Modular code structure (Navbar, Hero Section, Product Cards, Footer) for reusability.
+* **Product Showcase:** Dynamic grid layout to display skincare products.
+* **Interactive UI:** Smooth hover effects and button states for better user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ 
+##  How to Run Locally
 
-## Expanding the ESLint configuration
+To run this project on your local machine, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/ohotuowo-morgan/my-landing-page]
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2.  **Navigate to the project directory:**
+    ```bash
+    cd my-landing-page
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4.  **Start the development server:**
+    ```bash
+    npm start
+    # or
+    npm run dev
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+5.  Open the local host with your browser to see the result.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Lessons Learned
+Building Efiglow helped me strengthen my understanding of:
+* structuring React components for scalability.
+* using Flexbox/Grid for responsive layouts.
+* managing assets and images in a web project.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Contact
+* **Developer:** [Ohotuowo Morgan Agrinya ]
+* **GitHub:** [github.com/ohotuowo-morgan]
+* **Email:** [125chotumorgan@gmail.com]
+
+---
+*This project was built for educational purposes to demonstrate my frontend development skills.*
