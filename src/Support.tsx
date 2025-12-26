@@ -22,7 +22,7 @@ function Support() {
                 <div className="contact-grid">
                     <ContactCard icon={PhoneIcon} title="Call Us" info="+234 9074881650" />
                     <ContactCard icon={MailIcon} title="Email Us" info="125chotumorgan@gmail.com" />
-                    <ContactCard icon={PinIcon} title="Visit Us" info="ZeRo Space" />
+                    <ContactCard icon={PinIcon} title="Visit Us" info="Zero Space" />
                 </div>
 
                 {/* FAQ SECTION */}

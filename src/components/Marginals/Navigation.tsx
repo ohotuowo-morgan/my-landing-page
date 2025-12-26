@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
@@ -8,8 +8,8 @@ function Navigation() {
     return (
         <header>
             <div className="logo-section">
-                <img src="/images/Star 1.svg" alt="Efiglow logo" />
-                <p>Effiglow</p>
+                <Link to="/"><img src="/images/Star 1.svg" alt="Efiglow logo" /></Link>
+                <Link to="/" style={{textDecoration: "none"}}><p>Effiglow</p></Link>
             </div>
 
             <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
