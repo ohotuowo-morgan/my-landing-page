@@ -1,5 +1,5 @@
 import './FeaturedSection.css';
-import Productcard from './Productcard';
+import Productcard from './Product/Productcard';
 
 // 1. Dummy Data: This simulates a database of products
 const products = [

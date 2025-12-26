@@ -33,7 +33,8 @@
 
 .pagination-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 8rem;
 }
 
 /* --- Mobile Responsiveness --- */

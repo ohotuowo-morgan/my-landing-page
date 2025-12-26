@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './Product.css';
 
 // Product Page components
-import ProductsHero from "./components/ProductsHero"
-import ProductsFilter from "./components/ProductsFilter"
-import Productcard from './components/Productcard';
-import Pagination from './components/Pagination';
+import ProductsHero from "./components/Product/ProductsHero"
+import ProductsFilter from "./components/Product/ProductsFilter"
+import Productcard from './components/Product/Productcard';
+import Pagination from './components/Product/Pagination';
 
 const products = [
     { id: 1, title: 'Shade Cream', price: '₦58,000', image: '/images/cream.png' },

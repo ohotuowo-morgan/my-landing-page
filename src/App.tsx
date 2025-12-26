@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'; // 1. Import Router tools
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import Navigation from './components/Marginals/Navigation';
+import Footer from './components/Marginals/Footer';
 import Home from './Home';
 import Product from './Product';
+import Support from './Support';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
-          <Route path="/Support" element={<div style={{padding:'50px'}}>Support Page Coming Soon</div>} />
+          <Route path="/Support" element={<Support />} />
           <Route path='/Explore' element={<div style={{padding: '50px'}}>Explore Page Coming Soon</div>} />
           <Route path='/About_us' element={<div style={{padding: '50px'}}>About us Page Coming Soon</div>}/>
         </Routes>
