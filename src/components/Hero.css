@@ -69,6 +69,7 @@
         flex-direction: column;
         text-align: center;
         gap: 3rem;
+        padding: 0;
     }
 
     .hero-text {
@@ -77,12 +78,15 @@
     }
 
     .hero-image {
-        justify-content: right;
+        justify-content: center;
         width: 100%;
     }
 
     .hero-image img {
-        max-width: 80%;
+        display: block;
+        width: 100%;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%);
+        mask-image: linear-gradient(to bottom, transparent, black 20%);
     }
 
     .hero-text h1 {

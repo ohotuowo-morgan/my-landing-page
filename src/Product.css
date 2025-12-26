@@ -1,34 +1,42 @@
 .product-page {
-    background-color: #fff; /* Light gray background for the whole page */
+    background-color: #fff;
+    /* Light gray background for the whole page */
     min-height: 100vh;
 }
 
 /* The container holding sidebar + grid */
 .shop-container {
     display: flex;
-    gap: 2rem; /* Space between sidebar and grid */
+    gap: 2rem;
+    /* Space between sidebar and grid */
     max-width: 1200px;
-    margin: 0 auto; /* Center everything on big screens */
-    padding: 3rem 2rem; /* Outer spacing */
-    align-items: stretch; /* Ensures sidebar stays at top even if grid is long */
+    margin: 0 auto;
+    /* Center everything on big screens */
+    padding: 3rem 2rem;
+    /* Outer spacing */
+    align-items: stretch;
+    /* Ensures sidebar stays at top even if grid is long */
 }
 
 /* Sidebar Sizing */
 .shop-sidebar {
-    flex: 0 0 250px; /* Fixed width of 250px, don't grow, don't shrink */
+    flex: 0 0 250px;
+    /* Fixed width of 250px, don't grow, don't shrink */
 }
 
 /* Main Content Sizing */
 .shop-content {
-    flex: 1; /* Take up all remaining space */
+    flex: 1;
+    /* Take up all remaining space */
 }
 
 /* The Grid Layout for the cards */
 .shop-grid {
     display: grid;
     /* Creates 3 columns that are equal fraction width */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 2rem; /* Space between cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* Space between cards */
 }
 
 .pagination-content {
@@ -40,12 +48,14 @@
 /* --- Mobile Responsiveness --- */
 @media (max-width: 900px) {
     .shop-container {
-        flex-direction: column; /* Stack sidebar on top of grid */
+        flex-direction: column;
+        /* Stack sidebar on top of grid */
         padding: 2rem 1rem;
     }
 
     .shop-sidebar {
-        width: 100%; /* Sidebar takes full width on mobile */
+        width: 100%;
+        /* Sidebar takes full width on mobile */
         flex: none;
         margin-bottom: 2rem;
         display: flex;
@@ -55,5 +65,10 @@
     .shop-grid {
         /* Switch to 2 columns on tablets, 1 on phones if needed */
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .pagination-content {
+       width: 250px;
+       padding: 0;
     }
 }
