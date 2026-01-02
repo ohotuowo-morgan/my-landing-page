@@ -1,6 +1,7 @@
 .AboutCard {
     background-color: #F9FAFB;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border: 1px solid #E3E3E3;
     border-radius: 70px;
@@ -31,4 +32,6 @@
   100% { transform: translateY(0); }
 }
 
-
+@media (max-width: 760px) {
+    
+}

@@ -1,6 +1,7 @@
 .container {
     padding: 1rem;
     background-color: #FAFAFA;
+    box-sizing: border-box;
 }
 
 
@@ -14,56 +15,50 @@
 }
 
 .top {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     text-align: center;
+    margin: 0 auto;
 }
 
 
 .about-container{
     display: flex;
-    width: auto;
+    justify-content: center;
     gap: 40px;
     margin-top: 33px;
+    flex-wrap: wrap;
 }
 
 
 .right-row{
-    
     padding: 1rem 0 1rem;
 }
 
-.info{
-    width: 800px;
+.info, .vision{
+    width: 100%;
+    max-width: 800px;
     padding-bottom: 2rem;
-    text-align: left;
-}
-
-.vision{
-    width: 800px;
-    padding-top: 2rem;
     text-align: left;
 }
 
 p{
     color: #667185;
+    line-height: 1.6;
 }
 
 @media  (max-width: 760px) {
     .about-container{
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
-    .about-container > div {
-        margin: 0 auto; /* Centers block-level children */
-        margin-bottom: 2rem; /* Adds spacing since 'gap' won't work in block */
+
+    .info, .vision {
+        text-align: center; /* Usually looks better centered on mobile */
+        padding-top: 0;
+        padding-bottom: 2rem;
     }
-    .top{
-        width: 400px;
-    }
-    .info{
-        width: 400px;
-    }
-    .vision{
-        width: 400px;
-    }
+    
 }

@@ -5,6 +5,7 @@ import Home from './Home';
 import Product from './Product';
 import Support from './Support';
 import About from './About';
+import Explore from './Explore';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Support" element={<Support />} />
-          <Route path='/Explore' element={<div style={{padding: '50px'}}>Explore Page Coming Soon</div>} />
+          <Route path='/Explore' element={<Explore />}/>
           <Route path='/About_us' element={<About />}/>
         </Routes>
         

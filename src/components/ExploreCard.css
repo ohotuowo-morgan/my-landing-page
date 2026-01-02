@@ -1,0 +1,35 @@
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    gap: 33px;
+}
+
+h2{
+    text-align: center;
+}
+.product-card.first-variant .product-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #101928;
+    
+}
+.product-card.second-variant .head span{
+    background-color: #0000000F;
+    color: #616161 ;
+    padding:  3px;
+    border-radius: 8px;
+}
+.product-card.second-variant .product-title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #101928;
+}
+.product-card.third-variant .product-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #101928;
+}

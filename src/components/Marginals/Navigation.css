@@ -89,7 +89,7 @@ header img {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     header {
         padding: 0 1rem;
     }
