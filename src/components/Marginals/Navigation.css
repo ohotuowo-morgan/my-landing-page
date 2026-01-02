@@ -60,10 +60,23 @@ header img {
 
 }
 
-.tools a{
+.tools .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E8E7E7;
-    padding: 1rem;    
-    border-radius:90px;
+    padding: 0.75rem;    
+    border-radius: 50%;
+}
+
+.tools .profile{
+    border-radius: 0;
+}
+
+
+.profile img {
+    width: 40px;
+    height: auto;
 }
 
 

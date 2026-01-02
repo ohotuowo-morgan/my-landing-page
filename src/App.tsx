@@ -4,6 +4,7 @@ import Footer from './components/Marginals/Footer';
 import Home from './Home';
 import Product from './Product';
 import Support from './Support';
+import About from './About';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/Product" element={<Product />} />
           <Route path="/Support" element={<Support />} />
           <Route path='/Explore' element={<div style={{padding: '50px'}}>Explore Page Coming Soon</div>} />
-          <Route path='/About_us' element={<div style={{padding: '50px'}}>About us Page Coming Soon</div>}/>
+          <Route path='/About_us' element={<About />}/>
         </Routes>
         
       </main>

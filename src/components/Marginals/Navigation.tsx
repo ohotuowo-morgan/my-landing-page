@@ -32,9 +32,9 @@ function Navigation() {
             </nav>
 
             <div className="tools ">
-                <a href="#"><img src="/images/search.png" alt="Search icon" /></a>
-                <a href="#"><img src="/images/cart.svg" alt="shop icon" /></a>
-                <a href="#"><img src="/images/Avatar.svg" alt="profile" /></a>
+                <a href="#" className='icon'><img src="/images/search.png" alt="Search icon" /></a>
+                <a href="#" className='icon'><img src="/images/cart.png" alt="shop icon" /></a>
+                <a href="#" className='profile'><img src="/images/Avatar.svg" alt="profile" /></a>
             </div>
         </header>
     )
